@@ -17,6 +17,9 @@ output--origin  https://github.com/spaul13/Mediaplayer.git (fetch)
 
 git push --force <remote repository name>
 
+(sometimes, git push origin master gives the error git pull before push. As apparently your local branch is out of 
+sync with your tracking branch.
+
  
 https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 to push changes to the remote repositiory
@@ -24,6 +27,12 @@ first (check the status)
 1) add
 2) commit -> both can be done by (git commit -a)
 3) git push --force <remote repository name> (git push origin <branch name> is not working then)
+
+or
+ 
+1)git add .
+2) git commit -m "message"
+3) git push --set-upstream origin master
 
 
 
